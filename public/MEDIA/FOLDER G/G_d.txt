@@ -1,0 +1,8 @@
+Greutate aproximativa: 90 kg
+Dimensiuni: lungime 200 cm, lățime 50 cm, grosime 4.5 cm
+Armatura: fier PC Q6 mm
+Piatra: concasata
+Grupa ciment: I 52,5R
+Marca beton: B450
+Clasa beton Bc 35
+Clasa de rezistenta a betonului: C 28/35

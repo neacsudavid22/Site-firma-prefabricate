@@ -1,0 +1,101 @@
+.card {
+    position: relative;
+    display: inline-block;
+    margin:0.5em;
+    padding: 1em;
+    border: 3px hsl(0, 0%, 70%) solid;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px hsl(0, 0%, 50%, 0.1);
+    text-align: center;
+    overflow: hidden;
+}
+
+h2{
+    margin: 1em;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        margin:1em;
+        width: 15em;
+        height: 25em;
+        border: 3px hsl(0, 0%, 70%) solid;
+    }
+    h2{
+        font-size:large;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .card {
+        width: 16em;
+        height: 23em;
+    }
+    h2{
+        font-size:medium;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        width: 22em;
+        height: 30em;
+    }
+}
+
+.cardImage {
+    margin: 10px;
+    margin-top: 20px;
+    object-fit: cover;
+    width: 90%;
+    height: 45%;
+    border: 2px solid rgb(58, 36, 19);
+    border-radius: 25px;
+}
+
+.cardParagraph{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    font-size: 100%;
+}
+
+.cardButton{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: absolute;
+    height: 95%;
+    width: 100%;
+    padding-bottom: 15%;
+    margin-left: -1em;
+    margin-top: -2em;
+    box-shadow: inset 0px -80px 30px -5px hsl(0, 0%, 0%, 0.7);
+}
+
+.cardButton button{
+    width: 40%;
+    height: 3.5em;
+    font-size: 100%;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(to right, hsl(12, 100%, 70%),  hsl(41, 83%, 50%));
+    box-shadow: 0px 0px 10px 2px purple;
+    transition: 300ms;
+}
+
+
+.cardButton button:hover{
+    background: linear-gradient(to right, hsl(12, 100%, 72%),  hsl(41, 83%, 52%));
+    box-shadow: 0px 0px 15px 2px purple;
+}
+
+.cardButton button:active{
+    background: linear-gradient(to right, hsl(12, 100%, 60%),  hsl(41, 83%, 40%));
+    box-shadow: 0px 0px 10px 2px rgb(0, 128, 36);
+}
