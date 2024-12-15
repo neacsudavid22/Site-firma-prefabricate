@@ -1,10 +1,15 @@
-import Container from './components/Container'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/Home';
+import Item from './pages/Item';
 
 function App() {
   return (
-    <div style={{ justifyContent: 'center', display: 'flex'}}>
-      <Container/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} /> 
+        <Route path="/item/:letter" element={<Item />} /> 
+      </Routes>
+    </BrowserRouter>
   )
 }
 
