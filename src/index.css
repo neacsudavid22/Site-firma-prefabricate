@@ -1,6 +1,12 @@
-.body {
-    background: #c7c7c7;
-    border: none;
+*, *::before, *::after {
     padding: 0px;
     margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #e4e4e4;
 }

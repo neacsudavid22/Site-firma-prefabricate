@@ -30,7 +30,7 @@ function View({ letter = 'A' }) {
     };
 
     const handleGoBack = () => {
-        navigate('/');
+        navigate('/home');
     };
 
     return (

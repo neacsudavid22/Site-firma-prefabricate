@@ -1,29 +1,26 @@
+.container {
+    display: grid;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
 @media screen and (max-width: 768px) {
     .container {
-        display: grid;
         grid-template-columns: repeat(1, 1fr); 
         gap: 2em;
-        justify-content: space-between;
-        margin: 10px;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1280px) {
     .container {
-        display: grid;
         grid-template-columns: repeat(2, 1fr); 
-        gap: 1em;
-        justify-content: space-between;
-        margin: 10px;
+        gap: 6em;
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1281px) {
     .container {
-        display: grid;
         grid-template-columns: repeat(3, 1fr); 
         gap: 4em;
-        justify-content: space-between;
-        margin: 10px;
     }
 }
